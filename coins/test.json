@@ -1,0 +1,7 @@
+{
+    "name": "RKT TEST chain",
+    "symbol": "RKT",
+    "algorithm": "equihash",
+    "peerMagic": "b407ed8b",
+    "txfee": 0.0001
+}

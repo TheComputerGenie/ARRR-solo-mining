@@ -1,0 +1,62 @@
+{
+  "name": "pirate-solomining",
+  "version": "0.0.1",
+  "description": "High performance Stratum poolserver in Node.js",
+  "keywords": [
+    "stratum",
+    "mining",
+    "pool",
+    "server",
+    "poolserver"
+  ],
+  "homepage": "https://github.com/TheComputerGenie/ARRR-solo-mining",
+  "bugs": {
+    "url": "https://github.com/TheComputerGenie/ARRR-solo-mining/issues"
+  },
+  "license": "GPL-3.0",
+  "author": "ComputerGenie",
+  "contributors": [
+    {
+      "name": "webworker01",
+      "url": "https://github.com/webworker01"
+    },
+    {
+      "name": "aayanl",
+      "url": "https://github.com/aayanl/equihash-solomining"
+    },
+    "vekexasia",
+    "TheSeven",
+    {
+      "name": "Matthew Little",
+      "url": "https://github.com/zone117x"
+    }
+  ],
+  "main": "lib/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TheComputerGenie/ARRR-solo-mining.git"
+  },
+  "dependencies": {
+    "async": "^2.6.1",
+    "base58-native": "^0.1.4",
+    "bignum": "^0.13.0",
+    "bitgo-utxo-lib": "VerusCoin/bitgo-utxo-lib",
+    "equihashverify": "s-nomp/equihashverify",
+    "verushash": "VerusCoin/verushash-node",
+    "merkle-bitcoin": "^1.0.2",
+    "body-parser": "^1.18.2",
+    "color": "^1.0.3",
+    "colors": "^1.2.1",
+    "dot": "^1.1.2",
+    "express": "^4.16.3",
+    "express-dot-engine": "^1.0.7",
+    "promise": "^8.0.1"
+  },
+  "engines": {
+    "node": ">=11.5"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$PWD/node_modules/stratum-pool/node_modules/equihashverify/build/Release/:$PWD/node_modules/equihashverify/build/Release/ node --no-deprecation init.js"
+  }
+}
