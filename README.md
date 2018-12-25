@@ -65,7 +65,8 @@ Notes and known issues:
 If there is more than 1 vout on an `ac_private` chain, then Komodo disallows the coinbase total to be greater than the
 base block reward. There's nothing that can be done about this at a pool level.
 
-* (KI) 'Daemon is still syncing with network' is broken (fully sync chain before running pol), as is VarDiff.
+* (KI) 'Daemon is still syncing with network' is broken (fully sync chain before running pool), as is VarDiff. This 
+also throws a random `Cannot get a block template` error, which is meaningless and can be ignored.
 
 * (N KI) As noted above, shielding is currently manual only. This means that your coinage will sit in your transparent
 address untill you run `z_shieldcoinbase` with the daemon cli. An automation of this will be added in the future.
