@@ -28,7 +28,7 @@
         "host": "0.0.0.0",
         "port": "8088"
     },
-    "blockRefreshInterval": 500,
+    "blockRefreshInterval": 5,
     "jobRebroadcastTimeout": 70,
     "connectionTimeout": 6000000,
     "emitInvalidBlockHashes": false,
