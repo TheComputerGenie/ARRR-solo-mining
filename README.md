@@ -61,6 +61,9 @@ Differences between this and Z-NOMP
 
 Notes and known issues:
 ------------
+* (KI) Block notification is 1 block ahead on submission, so debug shows "duplicate" of our block and next block. Since
+the block number is only added for visual and issue tracking this is not a high priority fix.
+
 * (KI) You can only have recipients or collect fees. This is `not` a pool issue, this is inherent in the Komodo code.
 If there is more than 1 vout on an `ac_private` chain, then Komodo disallows the coinbase total to be greater than the
 base block reward. There's nothing that can be done about this at a pool level.
