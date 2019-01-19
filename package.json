@@ -1,6 +1,6 @@
 {
   "name": "pirate-solomining",
-  "version": "0.0.1",
+  "version": "0.3.3b-rc.1",
   "description": "High performance Stratum poolserver in Node.js",
   "keywords": [
     "stratum",
@@ -41,8 +41,6 @@
     "base58-native": "^0.1.4",
     "bignum": "^0.13.0",
     "bitgo-utxo-lib": "VerusCoin/bitgo-utxo-lib",
-    "equihashverify": "s-nomp/equihashverify",
-    "verushash": "VerusCoin/verushash-node",
     "merkle-bitcoin": "^1.0.2",
     "body-parser": "^1.18.2",
     "color": "^1.0.3",
@@ -57,6 +55,6 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$PWD/node_modules/stratum-pool/node_modules/equihashverify/build/Release/:$PWD/node_modules/equihashverify/build/Release/ node --no-deprecation init.js"
+    "start": "node --no-deprecation init.js"
   }
 }

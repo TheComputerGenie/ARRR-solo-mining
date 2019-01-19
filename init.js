@@ -62,18 +62,7 @@ function spawnPoolWorkers() {
                 createPoolWorker(forkId);
             }, 2000);
         }).on('message', function (msg) {
-            switch (msg.type) {
-                case 'banIP':
-                    Object.keys(cluster.workers).forEach(function (id) {
-                        if (cluster.workers[id].type === 'pool') {
-                            cluster.workers[id].send({
-                                type: 'banIP',
-                                ip: msg.ip
-                            });
-                        }
-                    });
-                    break;
-            }
+            logging('MSG', 'error', 'Fork ' + forkId + ' ' + msg, forkId)
         });
     }
 

@@ -11,10 +11,12 @@ Install
 -------------
 
 ```bash
-sudo apt-get install build-essential libsodium-dev npm
+sudo apt-get install build-essential libsodium-dev
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
 source ~/.bashrc
-npm install npm -g
+curl -sL https://deb.nodesource.com/setup_11.x | sudo bash -
+sudo apt-get install -y nodejs
+sudo npm install npm -g
 nvm install node
 nvm alias default node
 git clone https://github.com/TheComputerGenie/ARRR-solo-mining

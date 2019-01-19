@@ -38,13 +38,6 @@ config.json
     "connectionTimeout": 6000000,       // how man ms to allow a miner to go without sending something before disconnecting them
     "emitInvalidBlockHashes": false,    // set false -- meaningless for solo and needs removed
     "tcpProxyProtocol": false,          // set false -- while this may be usable in solo, I'm not sure all of the code is intact
-    "banning": {
-        "enabled": false,               // set false -- You want to always see when miners have issues, not silently ban them
-        "time": 600,
-        "invalidPercent": 50,
-        "checkThreshold": 500,
-        "purgeInterval": 300
-    },
     "clustering": {                     // pool attempts load self-balancing through multi-threading
         "enabled": false,               // If you have a lot of miners that connect individually, set true otherwise 1 is plenty
         "forks": 3                      // how many distinct threads you want open
