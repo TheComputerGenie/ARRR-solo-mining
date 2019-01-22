@@ -76,7 +76,7 @@ also throws a random `Cannot get a block template` error, which is meaningless a
 * (N KI) As noted above, shielding is currently manual only. This means that your coinage will sit in your transparent
 address untill you run `z_shieldcoinbase` with the daemon cli. An automation of this will be added in the future.
 
-* (N) If the code looks like it has 9 styles of writing, that because it does. It was a long journey from NOMP to here with
+* (N) If the code looks like it has 19 styles of writing, that because it does. It was a long journey from NOMP to here with
 many hands in the jar and no "standard" of style. Over time, the base has become the spagetti that NOMP was written to
 avoid, and over time that will be changed.
 
